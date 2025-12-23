@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block title %}Cyber Evolve | Learn{% endblock %}
+
+{% block content %}
+<div class="row g-4">
+  <div class="col-12">
+    <h2 class="fw-bold">Password Safety</h2>
+    <p class="text-muted">
+      Use long, unique passphrases. A password manager helps you avoid reuse and keeps credentials encrypted.
+      Turn on multi-factor authentication for accounts that matter most.
+    </p>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Do</h5>
+            <ul class="mb-0">
+              <li>Use 3–4 random words or a password manager</li>
+              <li>Enable MFA with an authenticator app</li>
+              <li>Rotate passwords if you suspect a breach</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Avoid</h5>
+            <ul class="mb-0">
+              <li>Reusing passwords across sites</li>
+              <li>Saving passwords in plain text or notes</li>
+              <li>Sharing credentials over email or chat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Quick Wins</h5>
+            <ul class="mb-0">
+              <li>Turn on MFA for email and banking first</li>
+              <li>Update old passwords flagged in data leaks</li>
+              <li>Use device biometrics for convenience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <h2 class="fw-bold d-flex align-items-center gap-2">
+      Phishing Examples
+      <span class="badge bg-warning text-dark">Learn to spot the tells</span>
+    </h2>
+    <p class="text-muted mb-3">These samples are safe. Hover or tap to reveal why they are risky.</p>
+    <div class="row g-3">
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h6 class="card-subtitle text-muted">Email Subject: "Urgent: Account Verification"</h6>
+              <span class="badge bg-danger">Phishing</span>
+            </div>
+            <p class="card-text small">
+              "Dear user, your account will be suspended in 2 hours. Click <a href="#" class="text-danger text-decoration-none" aria-label="fake link">here</a> to keep it active."
+            </p>
+            <div class="alert alert-warning mb-0 py-2 small">
+              Red flags: urgency, generic greeting, and a link that hides its destination.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h6 class="card-subtitle text-muted">SMS: "Delivery failed—update address"</h6>
+              <span class="badge bg-danger">Phishing</span>
+            </div>
+            <p class="card-text small">
+              "We tried to deliver your package. Confirm your address and payment <a href="#" class="text-danger text-decoration-none" aria-label="fake link">here</a>."
+            </p>
+            <div class="alert alert-warning mb-0 py-2 small">
+              Red flags: unexpected payment request, shortened link, and a sense of urgency.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <h2 class="fw-bold">Online Safety Tips</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Stay Updated</h5>
+            <p class="card-text">Install updates for your OS, browser, and apps to patch vulnerabilities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Verify Before You Trust</h5>
+            <p class="card-text">Check sender addresses, URLs, and spelling before entering credentials.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Limit Sharing</h5>
+            <p class="card-text">Avoid posting personal details publicly; attackers can reuse them in scams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

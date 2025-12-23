@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Cyber Evolve | Home{% endblock %}
+
+{% block content %}
+<div class="row align-items-center g-4">
+  <div class="col-lg-6">
+    <h1 class="display-5 fw-bold mb-3">Build safer habits with clear, daily cyber hygiene.</h1>
+    <p class="lead text-muted mb-4">
+      Cyber Evolve is a simple learning hub that explains online safety in plain language.
+      Explore quick lessons, spot real phishing cues, practice with quizzes, and pick up a fresh tip every day.
+    </p>
+    <div class="d-flex gap-2 flex-wrap">
+      <a class="btn btn-primary btn-lg" href="{{ url_for('quiz') }}">Try the Quiz</a>
+      <a class="btn btn-outline-primary btn-lg" href="{{ url_for('learn') }}">Start Learning</a>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Why cyber hygiene matters</h5>
+        <p class="card-text text-muted">
+          Everyday habits like strong passwords, cautious clicking, and software updates
+          prevent common attacks. This project keeps examples clear, actionable, and beginner-friendly.
+        </p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Interactive quizzes with instant feedback</li>
+          <li class="list-group-item">Safe, real-world phishing examples</li>
+          <li class="list-group-item">Daily cyber safety tip chosen for today</li>
+          <li class="list-group-item">Mobile-responsive layout with Bootstrap</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
